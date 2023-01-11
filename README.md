@@ -1,1 +1,2 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+- project is live at 
+- https://blog-mohan.vercel.app/
