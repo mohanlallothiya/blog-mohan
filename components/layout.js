@@ -16,6 +16,7 @@ export default function Layout({ children, home }) {
           name="description"
           content="share your happy moments, any trip experience , your success story, your struggle or anything that helps others in any way"
         />
+        <meta name="keywords" content="mohan-blog,blog-mohan, mohanlallothiya, mohanlal-blog, mohanlallothiyaiitk, blog-mohanlallothiya," />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(

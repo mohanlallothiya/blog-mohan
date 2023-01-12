@@ -1,32 +1,28 @@
 import Layout from '../../components/layout';
-import {getAllBlogIds, getBlogData} from '../../lib/blogs'
+import {getBlogData} from '../../lib/blogs';
 import utilStyles from '../../styles/utils.module.css';
 
-export async function getStaticPaths(){
-   const paths=await getAllBlogIds();
-   return {
-    paths,
-    fallback:false,
-   };
-}
-
-export async function getStaticProps({params}){
-    const blogData=await getBlogData(params.id);
+export async function getServerSideProps(context){
+    const {id}=context.query
+    const blogData=await getBlogData(id);
     const parsedBlogData=JSON.parse(JSON.stringify(blogData))
     return {
         props:{parsedBlogData}
     };
 }
 
-export default function Blog({parsedBlogData}){
+export default function BlogPage({parsedBlogData}){
     return (
         <Layout>
             <section className={utilStyles.list}>
             <div style={{whiteSpace: 'pre-line'}} className={utilStyles.blogCon}>
-            <h1 className={utilStyles.blogTitle}>{parsedBlogData.title}</h1>
+            <div className={utilStyles.blogHeader}>
+                <h1 className={utilStyles.blogTitle}>{parsedBlogData.title}</h1>
+                <p className={utilStyles.blogauthor}>- writtern by : {parsedBlogData.author}</p>
+            </div>
             <p className={utilStyles.blogContent}>{parsedBlogData.content}</p>
             </div>
-            </section>
+            </section> 
         </Layout>
     )
 }
