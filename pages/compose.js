@@ -11,14 +11,14 @@ export default function Compose() {
         </Head>
         {!session && (
               <>
-              <div className={utilStyles.composeMainCon}>
+              <div className={utilStyles.composeMainSignin}>
               <div class={utilStyles.box +" "+utilStyles.composeSigninCon}>
                 <p>
                   Please Sign In to post your Blog.
                 </p>
               <a
                 href={`/api/auth/signin`}
-                className={utilStyles.submitBtn}
+                className={utilStyles.signinBtn}
                 onClick={(e) => {
                   e.preventDefault()
                   signIn()

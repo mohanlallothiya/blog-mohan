@@ -2,218 +2,212 @@
 .readmore{
   font-weight: bold;
 }
+.composeMainCon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  width:100vw;
+  height:80vh;
+}
+.composeMainSignin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:70vh;
+}
+.composeSigninCon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height:250px;
+}
+.composeHeading{
+  font-size:20px;
+  margin-top: 0px;
+  align-self: flex-start;
+  color: rgb(50, 49, 51);
+}
+.composeSubCon{
+  width:90vw;
+  margin-bottom: 10px;
+}
+.label{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(50, 49, 51);
+}
+.formControl {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: rgb(51, 50, 50);
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.signinBtn{
+  font-size:16px;
+  color:rgb(68, 67, 67);
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #f1a1a1;
+  padding:5px 10px;
+}
+.submitBtn{
+  font-size: 20px;
+  font-weight: bold;
+  color:#fff;
+  background-color: rgb(14, 144, 243);
+  border:none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width:100vw;
+  margin:0px;
+  padding-left:0px;
+}
+.blogCon{
+  margin:10px 0px;
+  padding:10px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+  width:95vw;
+}
+.blogHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+.email{
+  font-style: italic;
+  font-weight: bold;
+}
+.blogauthor{
+  font-style: italic;
+  font-size:14px;
+  padding:0px;
+  margin:0px;
+}
+.blogTitle{
+  max-width: 90vw;
+  font-size:16px;
+  margin: 0px;
+  padding:0px;
+}
+.blogContent{
+  font-size: 14px;
+  margin:10px 0px;
+}
+.headingCon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+}
+.heading{
+  font-size:14px;
+  width:90vw;
+}
+.box{
+  width: 350px;
+  padding:0px 5px;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+}
+.userInput::placeholder {
+  font-family: 'Bree Serif';
+  color: grey;
+  opacity: 1;
+}
+
+@media(min-width:768px){
   .composeMainCon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100vw;
-    height:80vh;
-  }
-  .composeSigninCon{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height:250px;
+    align-items: flex-start;
+    padding:15px;
   }
   .composeHeading{
+    margin-bottom: 0px;
     font-size:26px;
-    margin-top: 0px;
-    align-self: flex-start;
-    margin-left: 15vw;
-    color: rgb(50, 49, 51);
+  }
+  .composeSubCon{
+    width:90vw;
+    margin-bottom: 10px;
+  }
+  .label{
+    font-size: 22px;
+  }
+  .submitBtn{
+    padding: 10px 20px;
+  }
+  .blogCon{
+    width:92vw;
+  }
+  .blogauthor{
+    font-size:16px;
+  }
+  .blogTitle{
+    font-size:18px;
+  }
+  .blogContent{
+    font-size: 16px;
+  }
+  .heading{
+    font-size:16px;
+    width:90vw;
+  }
+}
+@media (min-width:1200px) {
+  .composeMainCon{
+    align-items: center;
+  }
+  .composeHeading{
+    margin-bottom: 10px;
+    align-self: center;
+    width:70vw;
   }
   .composeSubCon{
     width:70vw;
     margin-bottom: 10px;
   }
   .label{
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(50, 49, 51);
-  }
-  .formControl {
-    width: 100%;
-    padding: 6px 12px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgb(51, 50, 50);
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  .submitBtn{
-    font-size: 20px;
-    font-weight: bold;
-    color:#fff;
-    background-color: rgb(14, 144, 243);
-    border:none;
-    border-radius: 5px;
-    padding: 10px 15px;
-  }
-  .list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    width:100vw;
-    margin:0px;
-    padding-left:0px;
+    font-size: 22px;
   }
   .blogCon{
-    margin:10px 0px;
-    padding:10px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
     width:72vw;
   }
-  .blogHeader{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0px;
-  }
-  .email{
-    font-style: italic;
-    font-weight: bold;
-  }
   .blogauthor{
-    font-style: italic;
     font-size:20px;
-    padding-top:5px;
-    margin:0px 0px 0px 30px;
   }
   .blogTitle{
-    margin: 0px;
+    font-size:24px;
   }
   .blogContent{
-    margin:10px 0px;
+    font-size: 18px;
   }
-  .headingCon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:100vw;
- }
   .heading{
+    font-size:18px;
     width:70vw;
   }
-  .signupmainCon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height:80vh;
+  .formControl {
+    font-size: 18px;
+    letter-spacing: 2px;
   }
-  .box{
-    width: 350px;
-    padding:0px 5px;
-    margin: auto;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
-  }
-  .signupheadingCon{
-    background-color: #A683E3;
-    text-align: center;
-    font-family: 'Bree Serif';
-    border-radius: 10px;
-    margin-bottom:10px;
-  }
-  .signupheading{
-    color: #fff;
-    padding: 10px;
-    font-size:26px;
-    margin:0px ;
-  }
-  .signupCon{
-    margin-top:10px;
-    height:280px;
-  }
-  .signupform{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:25px 5px;
-  }
-  .nameCon{
-    display: flex;
-    flex-direction: row;
-    margin-bottom:5px;
-  }
-  .nameSubCon{
-    margin:5px;
-    width:50vw;
-  }
-  .userInput::placeholder {
-    font-family: 'Bree Serif';
-    color: grey;
-    opacity: 1;
-  }
-  .label{
-    font-size: 20px;
-    font-weight: 400;
-    color: #00204a;
-    margin-bottom: 0px;
-  }
-  .userInput{
-    width:150px;
-    height:30px;
-    margin-top: 5px;
-    padding-left: 5px;
-    border-width:1px;
-    border-radius: 5px;
-    font-family: 'Bree Serif';
-  }
-  .userInput:focus ,.userInputsignin:focus {
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgb(51, 50, 50);
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    
-  }
-  .btn{
-    align-self: center;
-    width:150px;
-    border-radius: 5px;
-    font-family: 'Bree Serif';
-    border-color: transparent;
-    background-color: #5e85b7;
-    color: #fff;
-    font-size: 25px;
-    padding: 6px;
-    border-width: 0;
-  }
-  .signupBtn{
-    margin-top:15px;
-  }
-  .signinCon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25px 10px;
-  }
-  .usernameCon{
-    display: flex;
-    flex-direction: column;
-    margin:5px;
-    width:320px;
-  }
-  .userInputsignin{
-    width:310px;
-    height:32px;
-    margin-top: 5px;
-    padding-left: 5px;
-    border-width:1px;
-    border-radius: 5px;
-    font-family: 'Bree Serif';
-  }
-  .signinBtn{
-    margin-top:20px;
-  }
+  
+}

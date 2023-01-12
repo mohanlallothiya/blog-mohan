@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
                 width={144}
                 alt="user image"  />
               )}
-                <p>{session.user.email.substring(0,10)}</p>
+                <p className={styles.username}>{session.user.email.substring(0,10)}</p>
                 <a
                 href={`/api/auth/signout`}
                 className={styles.signoutBtn}

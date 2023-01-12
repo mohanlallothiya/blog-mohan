@@ -15,9 +15,9 @@ export default function Home({parsedBlogData}) {
   return (
     <Layout home>
       <div className={utilStyles.headingCon}>
-        <p className={utilStyles.heading}>Hii , I'm <strong> Mohan Lal Lothiya </strong> welcome you all to a reliable, safe, and free platform to share your ideas and opinions on any topic.
-        <br/>share your happy moments, any trip experience , your success story, your struggle or anything that helps others in any way 
-        <br/>for any query or feedback send an email to :<span className={utilStyles.email}> mohanjdh2016@gmail.com</span>
+        <p className={utilStyles.heading}>Hii , I'm <strong> Mohan Lal Lothiya </strong> welcome you all to a safe, reliable, and free platform to share your ideas and opinions on any topic.
+        Share your happy moments, any trip experience, your success story, your struggle, or anything that helps others in any way .
+        <br/>For any query or feedback send an email to :<span className={utilStyles.email}> mohanjdh2016@gmail.com</span>
         </p>
       </div>
       <section >
