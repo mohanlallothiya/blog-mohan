@@ -136,7 +136,64 @@
   color: grey;
   opacity: 1;
 }
+.commentCon{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+}
+.commentInputDisable{
+  width:85%;
+  padding-left: 5px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: rgb(51, 50, 50);
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
+.commentsigninBtn{
+  text-align: center;
+  width:70px;
+  font-size:12px;
+  color:rgb(68, 67, 67);
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #f1a1a1;
+  padding:5px 10px;
+}
+.postBtn{
+  align-self: flex-end;
+  margin-left:10px;
+  margin-right:10px;
+}
+.commentList{
+  margin:5px 0px;
+  padding-left:0px;
+  list-style-type: none;
+}
+.commentHead{
+  font-size:14px;
+  margin: 5px 0px;
+}
+.comment{
+  font-style: italic;
+  font-size:12px;
+  padding-left:25px;
+  margin:0px;
+}
+.commentUserCon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userIcon{
+  margin-right:10px;
+  height:15px;
+  width:15px;
+}
 @media(min-width:768px){
   .composeMainCon{
     align-items: flex-start;
@@ -171,6 +228,40 @@
   .heading{
     font-size:16px;
     width:90vw;
+  }
+  .commentCon{
+    padding: 10px 0px;
+  }
+  .commentInputDisable{
+    width:85%;
+    padding-left: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+  .commentsigninBtn{
+    width:100px;
+    font-size:16px;
+    padding:5px 15px;
+  }
+  .postBtn{
+    margin-left:20px;
+    margin-right:20px;
+  }
+  .commentList{
+    margin:10px 0px;
+  }
+  .commentHead{
+    font-size:18px;
+    margin: 5px 0px;
+  }
+  .comment{
+    font-size:16px;
+    padding-left:30px;
+  }
+  .userIcon{
+    height:20px;
+    width:20px;
   }
 }
 @media (min-width:1200px) {
@@ -208,6 +299,24 @@
   .formControl {
     font-size: 18px;
     letter-spacing: 2px;
+  }
+  .commentInputDisable{
+    font-size: 20px;
+  }
+  .commentsigninBtn{
+    font-size:20px;
+  }
+  .commentHead{
+    font-size: 24px;
+    margin: 5px 0px;
+  }
+  .comment{
+    font-size:20px;
+    padding-left:35px;
+  }
+  .userIcon{
+    height:25px;
+    width:25px;
   }
   
 }

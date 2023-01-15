@@ -23,7 +23,7 @@ export default function Home({parsedBlogData}) {
       <section >
       <ul className={utilStyles.list}>
           {parsedBlogData.map(({ _id, title,content,author }) => (
-            <li className={utilStyles.listItem} key={_id}>
+            <li key={_id}>
               <div style={{whiteSpace: 'pre-line'}} className={utilStyles.blogCon}>
                 <div className={utilStyles.blogHeader}>
                 <h1 className={utilStyles.blogTitle}>{title}</h1>
