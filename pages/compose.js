@@ -8,6 +8,7 @@ export default function Compose() {
       <Layout>
         <Head>
         <title>Compose Blog | Notes</title>
+        <meta name="og:title" content="Compose Blog | Notes" />
         </Head>
         {!session && (
               <>
