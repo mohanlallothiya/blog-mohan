@@ -13,16 +13,10 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/images/logoimage1.jpg" />
         <title>Daily Blog | Notes</title>
         <meta
-          name="description"
+          name="og:description"
           content="share your happy moments, any trip experience , your success story, your struggle or anything that helps others in any way"
         />
         <meta name="keywords" content="mohan-blog,blog-mohan, mohanlallothiya, mohanlal-blog, mohanlallothiyaiitk, blog-mohanlallothiya," />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            "Daily Blog | Notes"
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
         <meta name="og:title" content="Daily Blog | Notes" />
        
       </Head>
