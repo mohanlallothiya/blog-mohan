@@ -1,0 +1,7 @@
+# Block all crawlers for /compose
+User-agent: *
+Disallow: /compose
+
+# Allow all crawlers
+User-agent: *
+Allow: /
