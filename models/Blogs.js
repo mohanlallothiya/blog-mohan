@@ -4,7 +4,6 @@ const BlogSchema = new mongoose.Schema({
     title:String,
     content:String,
     author:String,
-    owner:String,
     comments : [{comment : String,comment_user : String}],
 })
 
